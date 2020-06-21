@@ -60,8 +60,7 @@ class Game extends React.Component {
 
 // ========================================
 
-ReactDOM.render(
+React.render(
     <Game />,
-   // document.getElementById('root')
-   React.render(<MainWrapper />, document.getElementById("root"))
+   document.getElementById('root')
 );
