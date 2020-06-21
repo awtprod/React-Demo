@@ -65,3 +65,6 @@ if (typeof window != "undefined") {
         document.getElementById('root')
     );
 }
+export default () => {
+    return "Show page working ! ";
+}
