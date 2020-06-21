@@ -1,5 +1,7 @@
 import ReactDOM from 'react-dom'
 import React from 'react'
+import dynamic from 'next/dynamic'
+const DynamicReactJson = dynamic(import('react-json-view'), { ssr: false })
 
 class Square extends React.Component {
     render() {
@@ -59,12 +61,7 @@ class Game extends React.Component {
 }
 
 // ========================================
-if (typeof window != "undefined") {
     ReactDOM.render(
         <Game />,
         document.getElementById('root')
     );
-}
-export default () => {
-    return "Show page working ! ";
-}
