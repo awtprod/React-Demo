@@ -62,5 +62,8 @@ class Game extends React.Component {
 
 ReactDOM.render(
     <Game />,
-    document.getElementById('root')
+   // document.getElementById('root')
+    if (typeof window !== 'undefined') {
+        React.render(<MainWrapper />, document.getElementById("root"));
+    }
 );
