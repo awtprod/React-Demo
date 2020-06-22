@@ -1,7 +1,6 @@
 import ReactDOM from 'react-dom'
 import React from 'react'
-import dynamic from 'next/dynamic'
-const DynamicReactJson = dynamic(import('react-json-view'), { ssr: false })
+import '../index.css'
 
 class Square extends React.Component {
     render() {
